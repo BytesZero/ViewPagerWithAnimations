@@ -15,7 +15,6 @@ public class ZoomOutPageTransformer implements ViewPager.PageTransformer {
     private static final float MIN_ALPHA = 0.5f;
 
 
-    @SuppressLint("NewApi")
     public void transformPage(View view, float position) {
         int width = view.getWidth();
         int pageWidth = width;

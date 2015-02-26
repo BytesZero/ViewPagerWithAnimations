@@ -22,5 +22,11 @@
         android:layout_height="wrap_content"
         android:text="动画3"
         android:id="@+id/animation3" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="动画4"
+        android:id="@+id/animation4" />
+
 
 </LinearLayout>

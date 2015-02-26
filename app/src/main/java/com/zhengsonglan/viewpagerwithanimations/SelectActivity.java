@@ -10,7 +10,7 @@ import android.widget.Button;
  * Created by zsl on 2015/2/25.
  */
 public class SelectActivity extends ActionBarActivity implements View.OnClickListener {
-    private Button btn1, btn2, btn3;
+    private Button btn1, btn2, btn3, btn4;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +23,8 @@ public class SelectActivity extends ActionBarActivity implements View.OnClickLis
         btn2.setOnClickListener(this);
         btn3= (Button) findViewById(R.id.animation3);
         btn3.setOnClickListener(this);
+        btn4= (Button) findViewById(R.id.animation4);
+        btn4.setOnClickListener(this);
 
     }
 
@@ -41,6 +43,10 @@ public class SelectActivity extends ActionBarActivity implements View.OnClickLis
             }
             case R.id.animation3: {
                 AppConfig.select=3;
+                break;
+            }
+            case R.id.animation4: {
+                AppConfig.select=4;
                 break;
             }
         }

@@ -9,7 +9,9 @@ import android.view.ViewGroup;
 import android.view.Window;
 import android.widget.ImageView;
 
+import com.zhengsonglan.viewpagerwithanimations.UI.MyViewPager;
 import com.zhengsonglan.viewpagerwithanimations.animations.Animation3Transformer;
+import com.zhengsonglan.viewpagerwithanimations.animations.Animation4Transformer;
 import com.zhengsonglan.viewpagerwithanimations.animations.DepthPageTransformer;
 import com.zhengsonglan.viewpagerwithanimations.animations.ZoomOutPageTransformer;
 
@@ -19,21 +21,23 @@ import java.util.List;
 
 public class MainActivity extends Activity {
 
-    private ViewPager mPager;
+    private MyViewPager mPager;
 
-    private int[] imgs={R.drawable.guide_image1,R.drawable.guide_image2,R.drawable.guide_image3,R.drawable.guide_image1,R.drawable.guide_image2,R.drawable.guide_image3};
+    private int[] imgs={R.drawable.guide_image1,R.drawable.guide_image2,R.drawable.guide_image3,R.drawable.guide_image4,R.drawable.guide_image5,R.drawable.guide_image6};
     private List<ImageView> images=new ArrayList<ImageView>();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_main);
-        mPager= (ViewPager) findViewById(R.id.main_viewpager);
+        mPager= (MyViewPager) findViewById(R.id.main_viewpager);
         //设置viewpage的动画
         if (AppConfig.select==2){
             mPager.setPageTransformer(true,new DepthPageTransformer());
         }else if(AppConfig.select==3){
             mPager.setPageTransformer(true,new Animation3Transformer());
+        }else if(AppConfig.select==4){
+            mPager.setPageTransformer(true,new Animation4Transformer());
         }else{
             mPager.setPageTransformer(true,new ZoomOutPageTransformer());
         }
