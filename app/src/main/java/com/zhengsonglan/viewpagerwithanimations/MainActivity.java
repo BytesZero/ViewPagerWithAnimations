@@ -9,6 +9,7 @@ import android.view.ViewGroup;
 import android.view.Window;
 import android.widget.ImageView;
 
+import com.zhengsonglan.viewpagerwithanimations.animations.Animation3Transformer;
 import com.zhengsonglan.viewpagerwithanimations.animations.DepthPageTransformer;
 import com.zhengsonglan.viewpagerwithanimations.animations.ZoomOutPageTransformer;
 
@@ -31,6 +32,8 @@ public class MainActivity extends Activity {
         //设置viewpage的动画
         if (AppConfig.select==2){
             mPager.setPageTransformer(true,new DepthPageTransformer());
+        }else if(AppConfig.select==3){
+            mPager.setPageTransformer(true,new Animation3Transformer());
         }else{
             mPager.setPageTransformer(true,new ZoomOutPageTransformer());
         }
