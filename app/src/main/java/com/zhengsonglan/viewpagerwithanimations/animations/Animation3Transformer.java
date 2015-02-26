@@ -8,7 +8,7 @@ import com.nineoldandroids.view.ViewHelper;
 
 /**
  * Created by zsl on 2015/2/25.
- * 动画2
+ * 动画3
  */
 public class Animation3Transformer implements ViewPager.PageTransformer {
     private static final float MAX_ROATE = 20f;

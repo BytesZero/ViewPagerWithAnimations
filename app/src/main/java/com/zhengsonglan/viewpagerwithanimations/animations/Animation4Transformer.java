@@ -7,7 +7,7 @@ import com.nineoldandroids.view.ViewHelper;
 
 /**
  * Created by zsl on 2015/2/25.
- * 动画2
+ * 动画4
  */
 public class Animation4Transformer implements ViewPager.PageTransformer {
     private static final float MAX_ROATE = 360f;
