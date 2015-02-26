@@ -203,4 +203,7 @@ public class Animation4Transformer implements ViewPager.PageTransformer {
 
 ![](https://github.com/yy1300326388/ViewPagerWithAnimations/blob/master/image/viewpager4.gif)
 
+#Thanks for
+1.JakeWharton : [NineOldAndroids](https://github.com/JakeWharton/NineOldAndroids/)
 
+2.Google : [Using ViewPager for Screen Slides](http://developer.android.com/intl/zh-cn/training/animation/screen-slide.html)
