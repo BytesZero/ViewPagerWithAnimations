@@ -25,6 +25,15 @@ public class MyViewPager extends ViewGroup {
 1. 注释掉判断SDK版本的地方 ```if (Build.VERSION.SDK_INT >= 11) {```
 2. ```PageTransformer``` 改为```ViewPager.PageTransformer```
 
+###XML Layout
+```java
+<com.zhengsonglan.viewpagerwithanimations.UI.MyViewPager
+        android:id="@+id/main_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+```
+
+
 ###编写动画
 
 ######动画1
@@ -207,3 +216,6 @@ public class Animation4Transformer implements ViewPager.PageTransformer {
 1.JakeWharton : [NineOldAndroids](https://github.com/JakeWharton/NineOldAndroids/)
 
 2.Google : [Using ViewPager for Screen Slides](http://developer.android.com/intl/zh-cn/training/animation/screen-slide.html)
+#Developed By
+
+* zsl - <1300326388@qq.com>
